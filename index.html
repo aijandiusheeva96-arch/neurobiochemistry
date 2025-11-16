@@ -1,119 +1,460 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aizhan Diusheeva — Founder of Neuro-BioChemistry | Right of Origin (2025)</title>
 
-  <title>Право происхождения — Neuro-BioChemistry</title>
-  <meta name="description" content="Дюшеева Айжан — основатель дисциплины Neuro-BioChemistry. Официальное заявление о Праве происхождения (Right of Origin, 2025). DOI 10.5281/zenodo.17517282; ORCID 0009-0004-0579-6682.">
+  <meta name="description" content="Official scientific page of Aizhan Diusheeva, founder of the discipline Neuro-BioChemistry (Right of Origin, 2025). Integrative system of molecular restoration, registered via DOI, ORCID, Zenodo and GitHub.">
 
-  <!-- Canonical / Open Graph / Twitter -->
-  <link rel="canonical" href="https://aijandiusheeva96-arch.github.io/neurobiochemistry/">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://neurobiochemistry.org/">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Право происхождения — Neuro-BioChemistry">
-  <meta property="og:description" content="Дюшеева Айжан — основатель дисциплины Neuro-BioChemistry. Официальное заявление о Праве происхождения (Right of Origin, 2025). DOI 10.5281/zenodo.17517282; ORCID 0009-0004-0579-6682.">
-  <meta property="og:url" content="https://aijandiusheeva96-arch.github.io/neurobiochemistry/">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Право происхождения — Neuro-BioChemistry">
-  <meta name="twitter:description" content="Официальное заявление о Праве происхождения (Right of Origin, 2025).">
+  <meta property="og:title" content="Aizhan Diusheeva — Founder of Neuro-BioChemistry">
+  <meta property="og:description" content="Official scientific edition of the discipline Neuro-BioChemistry (Right of Origin, 2025) by Aizhan Diusheeva.">
+  <meta property="og:url" content="https://neurobiochemistry.org/">
 
-  <!-- JSON-LD: Person (Founder) -->
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Aizhan Diusheeva — Founder of Neuro-BioChemistry">
+  <meta name="twitter:description" content="Integrative system of molecular restoration. Official scientific edition.">
+
+  <!-- Basic styles -->
+  <style>
+    :root {
+      --gold: #C1A14B;
+      --text: #111111;
+      --bg: #FFFFFF;
+      --muted: #666666;
+      --font-main: "Garamond", "Times New Roman", serif;
+      --font-title: "Georgia", "Times New Roman", serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-main);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 16px 64px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .logo-dot-row {
+      margin: 12px 0 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+    }
+    .logo-dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #003322;
+      border: 2px solid var(--gold);
+    }
+    .logo-line {
+      height: 3px;
+      width: 160px;
+      background-color: var(--gold);
+      border-radius: 2px;
+    }
+
+    h1 {
+      font-family: var(--font-title);
+      font-size: 28px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 0 0 8px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .tagline {
+      margin-top: 12px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .hero-block {
+      margin: 32px 0;
+      text-align: center;
+    }
+    .hero-title {
+      font-size: 22px;
+      font-family: var(--font-title);
+      margin-bottom: 8px;
+    }
+    .hero-subtitle {
+      font-size: 16px;
+      color: var(--muted);
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--gold);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+    }
+
+    .button-row {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 8px 18px;
+      font-size: 14px;
+      border-radius: 999px;
+      border: 1px solid var(--gold);
+      background-color: #fff;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .btn.primary {
+      background-color: var(--gold);
+      color: #fff;
+    }
+    .btn:hover {
+      text-decoration: none;
+      filter: brightness(0.96);
+    }
+
+    section {
+      margin: 36px 0;
+    }
+    section h2 {
+      font-family: var(--font-title);
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin: 8px 0;
+      font-size: 15px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 28px;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 6px 0;
+    }
+    li {
+      margin: 4px 0;
+      font-size: 15px;
+    }
+
+    .meta-list {
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .meta-list span {
+      display: inline-block;
+      margin-right: 6px;
+    }
+
+    .ru {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px dashed #ddd;
+      font-size: 14px;
+    }
+
+    .ru-title {
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 18px;
+      border-top: 1px solid #e0e0e0;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 720px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+      .page {
+        padding: 24px 16px 40px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      .hero-title {
+        font-size: 19px;
+      }
+    }
+  </style>
+
+  <!-- Schema.org: Person (Founder) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Дюшеева Айжан (Aizhan B. Diusheeva)",
+    "name": "Aizhan Diusheeva",
     "alternateName": [
-      "Aizhan Diusheeva",
       "Дюшеева Айжан Буранбековна",
-      "Diusheeva B. Aizhan"
+      "Diusheeva Aizhan Buranbekovna"
     ],
-    "jobTitle": "Founder of Neuro-BioChemistry",
-    "affiliation": { "@type": "Organization", "name": "Neuro-BioChemistry International Project — Independent Research Entity" },
+    "jobTitle": "Founder of the discipline Neuro-BioChemistry",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Neuro-BioChemistry — Integrative System of Molecular Restoration"
+    },
+    "identifier": [
+      "DOI:10.5281/zenodo.17517282",
+      "ORCID:0009-0004-0579-6682"
+    ],
     "sameAs": [
-      "https://orcid.org/0009-0004-0579-6682",
       "https://doi.org/10.5281/zenodo.17517282",
-      "https://doi.org/10.5281/zenodo.17543725"
+      "https://orcid.org/0009-0004-0579-6682",
+      "https://aijandiusheeva96-arch.github.io/neurobiochemistry/",
+      "https://scholar.google.com/citations?user=0CQ7bYIAAAAJ",
+      "https://instagram.com/aizhan.neurobiochemist",
+      "https://instagram.com/neurobiochemistry",
+      "https://facebook.com"
     ],
-    "knowsAbout": ["Neurobiology","Biochemistry","Epigenetics","Regulatory Biology","Integrative Medicine","Quantum Biology"],
-    "url": "https://aijandiusheeva96-arch.github.io/neurobiochemistry/"
+    "url": "https://neurobiochemistry.org/"
   }
   </script>
 
-  <!-- JSON-LD: Volume I -->
+  <!-- Schema.org: CreativeWork (Neuro-BioChemistry Volume I) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "name": "Neuro-BioChemistry — Volume I. International Edition (2025)",
-    "identifier": "10.5281/zenodo.17517282",
-    "author": { "@type": "Person", "name": "Diusheeva, Aizhan B." },
-    "isPartOf": { "@type": "PublicationVolume", "name": "Neuro-BioChemistry" },
-    "publisher": { "@type": "Organization", "name": "Zenodo" },
-    "inLanguage": ["ru","en"],
-    "datePublished": "2025",
-    "url": "https://doi.org/10.5281/zenodo.17517282"
+    "@type": "CreativeWork",
+    "name": "Neuro-BioChemistry, Volume I — The Field of Origin",
+    "author": {
+      "@type": "Person",
+      "name": "Aizhan Diusheeva"
+    },
+    "inLanguage": "en",
+    "datePublished": "2025-11-03",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Zenodo"
+    },
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "DOI",
+      "value": "10.5281/zenodo.17517282"
+    },
+    "url": "https://doi.org/10.5281/zenodo.17517282",
+    "description": "Foundational volume establishing the discipline Neuro-BioChemistry and the Right of Origin (2025) held by Aizhan Diusheeva."
   }
   </script>
-
-  <!-- JSON-LD: Volume II -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "name": "Neuro-BioChemistry — Volume II: The Integrative Systems (2025)",
-    "identifier": "10.5281/zenodo.17543725",
-    "author": { "@type": "Person", "name": "Diusheeva, Aizhan B." },
-    "isPartOf": { "@type": "PublicationVolume", "name": "Neuro-BioChemistry" },
-    "publisher": { "@type": "Organization", "name": "Zenodo" },
-    "inLanguage": ["ru","en"],
-    "datePublished": "2025",
-    "url": "https://doi.org/10.5281/zenodo.17543725"
-  }
-  </script>
-
-  <!-- Styles -->
-  <style>
-    :root { --gold:#C1A14B; --text:#000; --bg:#fff; }
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);}
-    body{
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-      line-height:1.6;
-      text-align:center;
-      padding:50px 20px;
-    }
-    h1,h2{font-family: "Times New Roman", Times, serif; text-transform:uppercase; letter-spacing:1.2px; color:var(--gold); margin:0.2em 0;}
-    h1{font-size:36px;}
-    h2{font-size:28px;}
-    h3{font-family: "Times New Roman", Times, serif; color:var(--gold); font-weight:700; margin:0.8em 0 0.6em;}
-    p{max-width:860px;margin:0.6em auto;font-size:18px;}
-    .sep{width:120px;height:4px;background:var(--gold);margin:22px auto;border-radius:2px;}
-    .foot{margin-top:38px;font-size:15px;opacity:.85}
-    .foot a{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(193,161,75,.35)}
-    .foot a:hover{opacity:.9}
-  </style>
 </head>
 
 <body>
-  <h1>ПРАВО<br>ПРОИСХОЖДЕНИЯ<br>(RIGHT OF ORIGIN)</h1>
+  <div class="page">
+    <header>
+      <div class="subtitle">Official Scientific Edition</div>
+      <h1>Aizhan Diusheeva</h1>
+      <div class="tagline">Founder of the discipline Neuro-BioChemistry · Right of Origin (2025)</div>
 
-  <h3>Дюшеева Айжан — основатель дисциплины<br>Neuro-BioChemistry</h3>
+      <div class="logo-dot-row">
+        <div class="logo-dot"></div>
+        <div class="logo-dot"></div>
+        <div class="logo-dot"></div>
+        <div class="logo-dot"></div>
+      </div>
 
-  <div class="sep"></div>
+      <div class="meta-list">
+        <span>DOI: <a href="https://doi.org/10.5281/zenodo.17517282" target="_blank" rel="noopener">10.5281/zenodo.17517282</a></span>
+        ·
+        <span>ORCID: <a href="https://orcid.org/0009-0004-0579-6682" target="_blank" rel="noopener">0009-0004-0579-6682</a></span>
+      </div>
+    </header>
 
-  <p>Нейро-Био-Химия — интегративная система восстановления молекулярной проводимости и первопричной когерентности живого.</p>
-  <p>«Всё живое удерживается, пока поле и среда соразмерны. Как только проводимость нарушается — форма теряет меру, прекращая быть живой либо искажаясь».</p>
+    <main>
+      <section class="hero-block">
+        <div class="hero-title">Neuro-BioChemistry — Integrative System of Molecular Restoration</div>
+        <div class="hero-subtitle">
+          A new scientific discipline that unites biochemistry, nutrition, neurobiology, epigenetics
+          and quantum-level regulation into one coherent system of restoration.
+        </div>
+        <div class="badge">Right of Origin — 2025</div>
 
-  <div class="sep"></div>
+        <div class="button-row">
+          <a class="btn primary" href="https://doi.org/10.5281/zenodo.17517282" target="_blank" rel="noopener">
+            Read Volume I (Zenodo)
+          </a>
+          <a class="btn" href="https://aijandiusheeva96-arch.github.io/neurobiochemistry/" target="_blank" rel="noopener">
+            Foundational Authorship
+          </a>
+          <a class="btn" href="https://orcid.org/0009-0004-0579-6682" target="_blank" rel="noopener">
+            ORCID Record
+          </a>
+        </div>
+      </section>
 
-  <p><em>Foundational authorship verified via DOI</em> <a href="https://doi.org/10.5281/zenodo.17517282" target="_blank" rel="noopener">10.5281/zenodo.17517282</a> <em>and</em> <a href="https://orcid.org/0009-0004-0579-6682" target="_blank" rel="noopener">ORCID</a>. © 2025 Right of Origin — Neuro-BioChemistry.</p>
+      <section>
+        <h2>About the Founder</h2>
+        <div class="two-col">
+          <div>
+            <p>
+              Aizhan Diusheeva is the first founder, author and holder of the Right of Origin (2025)
+              for the discipline <strong>Neuro-BioChemistry</strong> — an integrative meta-system of
+              molecular restoration of the human organism.
+            </p>
+            <p>
+              Her work unites nutritional biochemistry, neurobiology, epigenetic regulation,
+              quantum-informational processes and tissue-level conductivity into a single ontological map:
+              <em>Field → Medium → Tissue → Shell → Organ → System</em>.
+            </p>
+            <p>
+              The central focus of Neuro-BioChemistry is not symptomatic control,
+              but restoration of the primary architecture of the living system — at the level of medium,
+              field and molecular conductance.
+            </p>
+          </div>
+          <div>
+            <p><strong>Key scientific identifiers:</strong></p>
+            <ul>
+              <li>DOI (Volume I): <a href="https://doi.org/10.5281/zenodo.17517282" target="_blank" rel="noopener">10.5281/zenodo.17517282</a></li>
+              <li>ORCID: <a href="https://orcid.org/0009-0004-0579-6682" target="_blank" rel="noopener">0009-0004-0579-6682</a></li>
+              <li>GitHub (Foundational Authorship): <a href="https://aijandiusheeva96-arch.github.io/neurobiochemistry/" target="_blank" rel="noopener">aijandiusheeva96-arch.github.io/neurobiochemistry</a></li>
+              <li>Google Scholar: <a href="https://scholar.google.com/citations?user=0CQ7bYIAAAAJ" target="_blank" rel="noopener">Scholar profile</a></li>
+            </ul>
 
-  <div class="foot">
-    Published via GitHub Pages · Official Edition 2025
-    <br><strong>Links:</strong>
-    <a href="https://doi.org/10.5281/zenodo.17517282" target="_blank" rel="noopener">Zenodo Vol. I</a> ·
-    <a href="https://doi.org/10.5281/zenodo.17543725" target="_blank" rel="noopener">Zenodo Vol. II</a> ·
-    <a href="https://orcid.org/0009-0004-0579-6682" target="_blank" rel="noopener">ORCID profile</a>
+            <p><strong>Official social profiles:</strong></p>
+            <ul>
+              <li>Instagram — <a href="https://instagram.com/aizhan.neurobiochemist" target="_blank" rel="noopener">@aizhan.neurobiochemist</a></li>
+              <li>Instagram — <a href="https://instagram.com/neurobiochemistry" target="_blank" rel="noopener">@neurobiochemistry</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ru">
+          <div class="ru-title">Кто такая Дюшеева Айжан?</div>
+          <p>
+            Дюшеева Айжан Буранбековна — основатель и держатель <strong>Права происхождения</strong>
+            (Right of Origin, 2025) на дисциплину <strong>Нейро-Био-Химия (Neuro-BioChemistry)</strong> —
+            новую интегративную надсистему молекулярного восстановления организма.
+          </p>
+          <p>
+            Её подход объединяет нутрициологию, биохимию, нейробиологию, эпигенетику и квантовую физиологию,
+            возвращая причинность в медицину: от среды и поля — к ткани, органу и системе.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Right of Origin · Act of Foundation</h2>
+        <p>
+          The discipline Neuro-BioChemistry and its ontological map were registered as an
+          <strong>official scientific act of foundation</strong>, with the Right of Origin held by
+          Aizhan Diusheeva. Any teaching, citation or derivative use requires explicit reference
+          to the original work and holder of origin.
+        </p>
+        <p>
+          The full Act of Foundation and the international edition are archived via Zenodo and mirrored
+          through GitHub for long-term scientific preservation.
+        </p>
+
+        <div class="ru">
+          <div class="ru-title">Право происхождения</div>
+          <p>
+            Нейро-Био-Химия оформлена как система с закреплённым Правом происхождения:
+            первичный исток системы официально принадлежит Дюшеевой Айжан.
+            Любое преподавание или использование без согласования с держателем истока
+            признаётся производным.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Volumes and Structure</h2>
+        <ul>
+          <li><strong>Volume I — The Field of Origin</strong> (published, DOI registered)</li>
+          <li><strong>Volume II — The Integrative Systems</strong> (structure announced as related work)</li>
+          <li><strong>Volume III — Applied Neuro-BioChemistry</strong> (clinical and practical protocols)</li>
+        </ul>
+        <p>
+          Related works and future volumes are linked as <em>Related work</em> in the
+          Zenodo record to preserve continuity of authorship and scientific priority.
+        </p>
+      </section>
+
+      <section>
+        <h2>For media & collaborations</h2>
+        <p>
+          This page serves as the primary scientific reference for the discipline Neuro-BioChemistry
+          and for its founder, Aizhan Diusheeva.
+        </p>
+        <p>
+          For interviews, conferences and collaborations, please use the official social profiles
+          listed above. Any media citation is recommended to include:
+        </p>
+        <ul>
+          <li>Full name: <strong>Aizhan Diusheeva</strong> (Дюшеева Айжан Буранбековна)</li>
+          <li>Title: <strong>Founder of the discipline Neuro-BioChemistry</strong></li>
+          <li>Reference DOI: <strong>10.5281/zenodo.17517282</strong></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      © 2025 Aizhan Diusheeva · Neuro-BioChemistry · Right of Origin.  
+      This site serves as the official scientific reference for the discipline and its founder.
+    </footer>
   </div>
 </body>
 </html>
